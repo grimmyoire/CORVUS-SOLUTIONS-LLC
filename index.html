@@ -4,171 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corvus Solutions, LLC</title>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Montserrat', 'Open Sans', sans-serif;
-            margin: 0;
-            color: #222831;
-            background-color: #F7F7F7;
-        }
-
-        header {
-            background-color: #3C3F51;
-            color: #F7F8FA;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header .logo img {
-            max-width: 150px;
-            height: auto;
-            margin: 10px 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #F7F8FA;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .hero {
-            background-color: #3C3F51;
-            color: #F7F8FA;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-
-        .cta-button {
-            background-color: #6C63FF;
-            color: #F7F8FA;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-        }
-
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            color: #3C3F51;
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
-
-        .service-item {
-            background-color: #E0E2E5;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact form label {
-            display: block;
-            margin-bottom: 10px;
-            color: #3C3F51;
-        }
-
-        .contact form input, .contact form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #D1D3D4;
-            border-radius: 5px;
-        }
-
-        .contact form .cta-button {
-            background-color: #6C63FF;
-            color: #F7F8FA;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #3C3F51;
-            color: #F7F8FA;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Corvus Solutions Logo">
+            <img src="images/logo.png" alt="Corvus Solutions Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home" class="hero">
+    <section class="hero">
         <h1>Precision in Digital Craftsmanship</h1>
         <p>Delivering sleek, professional website development and IT services with a commitment to quality, innovation, and customer satisfaction.</p>
-        <a href="#services" class="cta-button">Our Services</a>
-    </section>
-
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <div class="service-item">
-            <h3>Website Development</h3>
-            <p>Sleek and professional websites built to your specifications.</p>
-        </div>
-        <div class="service-item">
-            <h3>IT Services</h3>
-            <p>Reliable IT services to keep your business running smoothly.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit" class="cta-button">Send Message</button>
-        </form>
+        <a href="services.html" class="cta-button">Our Services</a>
     </section>
 
     <footer>
