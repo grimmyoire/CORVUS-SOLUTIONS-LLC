@@ -114,3 +114,54 @@ footer {
         padding: 150px 20px;
     }
 }
+@media (prefers-color-scheme: dark) {
+    /* Global Styles */
+    body {
+        background-color: #1C1C1C; /* Dark background */
+        color: #F7F8FA; /* Light text */
+    }
+
+    header {
+        background-color: #1C1C1C; /* Dark background for header */
+        color: #F7F8FA; /* Light text for header */
+    }
+
+    nav ul li a {
+        color: #F7F8FA; /* Light text for navigation links */
+    }
+
+    .hero {
+        background-color: #1C1C1C; /* Dark background for hero section */
+        color: #F7F8FA; /* Light text */
+    }
+
+    .hero .cta-button {
+        background-color: #E7741B; /* Vibrant copper for buttons in dark mode */
+        color: #1C1C1C; /* Dark text on buttons */
+    }
+
+    .services h2, .contact h2 {
+        color: #F7F8FA; /* Light text for section headings */
+    }
+
+    .service-item {
+        background-color: #2B2E3B; /* Darker background for service items */
+        color: #F7F8FA; /* Light text */
+    }
+
+    .contact form input, .contact form textarea {
+        background-color: #2B2E3B; /* Darker background for form fields */
+        color: #F7F8FA; /* Light text inside form fields */
+        border: 1px solid #5A5475; /* Subtle purple border */
+    }
+
+    .contact form .cta-button {
+        background-color: #E7741B; /* Vibrant copper for buttons */
+        color: #1C1C1C; /* Dark text on buttons */
+    }
+
+    footer {
+        background-color: #1C1C1C; /* Dark background for footer */
+        color: #F7F8FA; /* Light text */
+    }
+}
