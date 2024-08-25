@@ -11,6 +11,7 @@
             margin: 0;
             color: #2B2E3B;
             background-color: #F7F8FA;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -21,9 +22,9 @@
         }
 
         header .logo img {
-            max-width: 150px; /* Adjust size */
-            height: auto; /* Maintain aspect ratio */
-            margin: 10px 0; /* Space around logo */
+            max-width: 150px;
+            height: auto;
+            margin: 10px 0;
         }
 
         nav ul {
@@ -33,12 +34,13 @@
 
         nav ul li {
             display: inline;
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         nav ul li a {
             color: #F7F8FA;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .hero {
@@ -48,22 +50,34 @@
             padding: 100px 20px;
         }
 
-        .hero .cta-button {
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
             background-color: #5A5475;
             color: #F7F8FA;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.1em;
         }
 
         .section {
-            padding: 50px 20px;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .section h2 {
             color: #0A1F44;
-            text-align: center;
-            margin-bottom: 20px;
+            font-size: 2em;
+            margin-bottom: 30px;
         }
 
         .service-item {
@@ -95,10 +109,9 @@
         .contact form .cta-button {
             background-color: #5A5475;
             color: #F7F8FA;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+            padding: 12px 24px;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
 
@@ -108,16 +121,6 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 50px;
-        }
-
-        @media (min-width: 768px) {
-            nav ul li {
-                margin: 0 20px;
-            }
-
-            .hero {
-                padding: 150px 20px;
-            }
         }
     </style>
 </head>
