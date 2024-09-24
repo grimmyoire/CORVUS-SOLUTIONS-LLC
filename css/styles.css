@@ -1,110 +1,107 @@
-/* Basic reset and styling */
-* {
+body {
+    font-family: sans-serif; /* Choose a suitable font */
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    background-color: #f2e9e1; /* Background color */
 }
 
-/* Header styling */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    position: relative; /* For positioning the curved shape */
+}
+
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #142850; /* Dark blue background */
+    color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Hero section styling */
-.hero {
-    background-image: url('hero-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    padding: 100px 20px;
     text-align: center;
+    position: relative; /* For positioning the contact banner */
+    border-radius: 0 0 50% 0; /* Create the curved shape */
+    overflow: hidden; /* Hide content overflowing the curve */
 }
 
-.hero-content {
-    max-width: 800px;
-    margin: auto;
-}
-
-.cta-button {
-    background-color: #f06;
-    color: #fff;
+.contact-banner {
+    background-color: #f05454; /* Red banner color */
+    color: white;
     padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: bottom right;
 }
 
-.cta-button:hover {
-    background-color: #d00552;
+main {
+    background-color: white;
+    padding: 30px;
 }
 
-/* Content boxes */
-.content-box {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+.main-text {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.text-box {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
+.main-text h1 {
+    font-size: 3em;
+    margin: 5px 0;
 }
 
-.text-box h2 {
-    margin-bottom: 10px;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 30px;
+    text-align: center;
     font-size: 1.5em;
+    color: white;
 }
 
-.text-box p {
-    font-size: 1em;
-    color: #333;
+.brown { background-color: #603813; }
+.teal { background-color: #439A97; }
+.yellow { background-color: #F2A71B; }
+.green { background-color: #344CB7; }
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 
-/* Footer styling */
+.bottom-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottom-section button {
+    background-color: #f05454;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #142850;
+    color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
-.social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+footer img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
-.social-links a:hover {
-    text-decoration: underline;
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+footer li {
+    margin-bottom: 5px;
 }
