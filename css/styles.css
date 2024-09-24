@@ -11,23 +11,22 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 80%; /* Adjust container width */
+    margin: 20px auto; /* Center container */
     border: 5px solid #6b3347;
     border-radius: 15px;
-    overflow: hidden;
     padding: 20px;
-    background-color: #fff; /* To distinguish the container */
+    background-color: #fff;
 }
 
 /* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* Center elements vertically */
     padding-bottom: 10px;
     border-bottom: 5px solid #6b3347;
+    margin-bottom: 20px;
 }
 
 .logo img {
@@ -47,7 +46,8 @@ header {
 }
 
 .cta {
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .cta-button {
@@ -57,7 +57,6 @@ header {
     color: white;
     text-align: center;
     font-weight: bold;
-    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -73,18 +72,20 @@ header {
     font-size: 18px;
     font-weight: bold;
     color: #27364f;
+    line-height: 1.5; /* Add line spacing for readability */
 }
 
 /* Grid Layout for Boxes */
 .grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping */
     gap: 10px;
-    justify-content: center; /* Centering the boxes */
+    justify-content: space-around; /* Space out the boxes */
+    margin-bottom: 20px;
 }
 
 .box {
-    flex: 1 1 200px; /* Adjust width and responsiveness */
+    flex: 1 1 200px; /* Basic box width and grow properties */
     background-color: #27364f;
     color: white;
     border-radius: 10px;
