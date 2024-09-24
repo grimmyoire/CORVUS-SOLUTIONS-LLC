@@ -1,13 +1,149 @@
-/* styles.css */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    font-family: Arial, sans-serif;
     background-color: #f7f2e5;
 }
 
-.test-box {
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 5px solid #6b3347;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff; /* To distinguish the container */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #6b3347;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.banner {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.banner p {
+    font-size: 20px;
+    color: #a4552d;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta-button {
+    background-color: #d72f30;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta-button span {
+    font-size: 12px;
+    display: block;
+}
+
+/* Main Content Styling */
+.intro-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #27364f;
+}
+
+/* Grid Layout for Boxes */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Centering the boxes */
+}
+
+.box {
+    flex: 1 1 200px; /* Adjust width and responsiveness */
     background-color: #27364f;
     color: white;
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
-    margin: 20px;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px; /* Add margin to space out the boxes */
+}
+
+.box.websites {
+    background-color: #ae6d3a;
+}
+
+.box.professional-services {
+    background-color: #60c1c0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.box.consulting {
+    background-color: #f4c542;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.box.about-us {
+    background-color: #6aba71;
+}
+
+.box.call-to-action {
+    background-color: #b87d6e;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 5px solid #6b3347;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #6b3347;
 }
